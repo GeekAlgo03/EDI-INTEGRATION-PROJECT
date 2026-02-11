@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Platform Portal</title>
+  <link rel="stylesheet" href="/ui/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="sf-header">
+    <div class="sf-brand">Business Adaptive EDI & API Integration Portal</div>
+    <div class="sf-sub">Trusted EDI integrations • User Portal</div>
+  </header>
+
+  <div class="container">
+    <aside class="panel">
+      <h3>New Transaction</h3>
+
+      <label>Document Type</label>
+      <select id="docType">
+        <option value="850">850 — Purchase Order</option>
+        <option value="856">856 — ASN (Shipment)</option>
+      </select>
+
+      <div id="guidedFields">
+        <label>PO Number</label>
+        <input id="poNumber" placeholder="e.g. PO-12345" />
+
+        <div id="asnFields" style="display:none">
+          <label>Shipment Number</label>
+          <input id="shipmentNumber" placeholder="e.g. SHP-987" />
+
+          <label>Items</label>
+          <div id="itemsList"></div>
+          <button id="addItem" class="small">Add Item</button>
+        </div>
+      </div>
+
+      <div class="or">OR</div>
+      <label>Advanced XML (paste raw XML)</label>
+      <textarea id="rawXml" rows="6" placeholder="Optional: paste full XML here"></textarea>
+
+      <div class="actions">
+        <button id="buildAndSend" class="primary">Send</button>
+        <button id="clearForm" class="secondary">Clear</button>
+      </div>
+    </aside>
+
+    <main class="panel main-panel">
+      <div class="toolbar">
+        <div class="title">Results</div>
+        <div class="controls">
+          <input id="replayId" placeholder="run_id for replay" />
+          <button id="replayBtn">Replay</button>
+        </div>
+      </div>
+
+      <div id="resultsArea">
+        <p class="hint">Send a transaction to see the canonical model and the Netsuite payload. Runs are saved for audit and replay.</p>
+      </div>
+
+      <section class="panel chat-panel" aria-expanded="true">
+        <div class="chat-header">
+          <h3>Mapping Assistant (AI)</h3>
+          <button id="toggleChat" class="small" aria-label="Toggle mapping assistant">−</button>
+        </div>
+        <div id="chatWindow" class="chat-window"></div>
+        <div class="chat-controls">
+          <input id="chatInput" placeholder="Ask about field mapping, examples, rules..." />
+          <button id="sendChat" class="primary">Ask</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/ui/app.js"></script>
+</body>
+</html>
