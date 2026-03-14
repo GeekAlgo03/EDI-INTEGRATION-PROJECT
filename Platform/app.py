@@ -19,9 +19,9 @@ from pathlib import Path
 
 # ---- App metadata ----
 app = FastAPI(
-    title="Business Adaptive EDI & API Integration Portal",
+    title="Business Adaptive EDI & API Integration Portal Prototype",
     version="0.1.0",
-    description="Company-centric, EDI-aware FastAPI prototype with audit + replay capability (thesis MVP).",
+    description="Company-centric, EDI-aware FastAPI prototype with audit + replay capability and Ai Assisted (thesis MVP).",
 )
 
 # ---- DB init on startup (creates runs.db + table if not exists) ----

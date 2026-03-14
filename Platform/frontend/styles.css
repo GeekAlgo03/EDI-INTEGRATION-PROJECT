@@ -32,7 +32,6 @@ body{font-family:Inter,system-ui,Segoe UI,Arial; background:var(--bg); color:var
 .row{display:flex;align-items:center;gap:8px;margin:8px 0}
 .runid{background:#f1fff4;padding:6px;border-radius:6px;font-family:monospace}
 .hint{color:var(--muted);font-size:13px}
-details pre{background:#0b102022;padding:10px;border-radius:6px;color:#051124}
 .error{color:#8b0000;background:#ffecec;padding:8px;border-radius:6px}
 .item-row{display:flex;gap:8px;margin-bottom:8px}
 .item-row input{flex:1}
@@ -58,5 +57,10 @@ details pre{background:#0b102022;padding:10px;border-radius:6px;color:#051124}
 .chat-panel.collapsed .chat-window,
 .chat-panel.collapsed .chat-controls{display:none}
 .chat-panel.collapsed .chat-header h3{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+details{border:1px solid #d0dce6;border-radius:6px;padding:12px;margin-bottom:12px;background:#fafbfc}
+details summary{cursor:pointer;font-weight:600;color:var(--brand-green-dark);padding:8px;margin:-8px;margin-bottom:8px}
+details summary:hover{background:#f1f5f9;border-radius:4px}
+details pre{background:#0b102022;padding:10px;border-radius:6px;color:#051124;margin:0}
 
 

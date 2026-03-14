@@ -1,6 +1,6 @@
-# Business Adaptive EDI & API Integration Portal
+# Business Adaptive EDI & API Integration Portal Prototype
 
-Academic prototype developed as part of Master thesis for EDI parsing, transformation and audit/replay.
+Light-weight prototype for EDI parsing, transformation and audit/replay (thesis MVP).
 
 ## Overview
 - FastAPI backend exposing endpoints to ingest EDI-like XML for `850` (PO) and `856` (ASN).
@@ -99,5 +99,3 @@ Not implemented:
 - Real EDI X12 parsing
 - Authentication and role management
 - Production-grade error handling
-
-

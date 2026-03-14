@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<OrderMessageBatch batchNumber="3030021685">
+<partnerID name="Ceha Canada Inc (CA)" roleType="vendor">cehaca</partnerID>
+<hubOrder transactionID="3008692236">
+  <participatingParty name="Costco" roleType="merchant" participationCode="From:">costco</participatingParty>
+  <sendersIdForReceiver>cehaca00</sendersIdForReceiver>
+  <orderId>3008692236</orderId>
+  <lineCount>1</lineCount>
+  <poNumber>000001542923403</poNumber>
+  <orderDate>2025-11-14T14:22:33.000-05:00</orderDate>
+  <shipTo personPlaceID="PP3018353347" />
+  <billTo personPlaceID="PP3018353348" />
+  <shippingCode>UPSN_CG</shippingCode>
+  <controlNumber>100</controlNumber>
+  <salesDivision>WEB</salesDivision>
+  <custOrderNumber>4417-93004</custOrderNumber>
+  <custOrderDate>2025-11-13T14:22:33.000-05:00</custOrderDate>
+  <poHdrData>
+    
+	<packListData>
+      
+		<packslipTemplate>EN</packslipTemplate>
+      
+	
+    </packListData>
+    
+	<custOrderNumber>4417-93004</custOrderNumber>
+    
+	<custOrderDate>20251113</custOrderDate>
+    
+
+  </poHdrData>
+  <lineItem>
+    <lineItemId>3004787790</lineItemId>
+    <orderLineNumber>1</orderLineNumber>
+    <merchantLineNumber>1</merchantLineNumber>
+    <qtyOrdered>76</qtyOrdered>
+    <unitOfMeasure>EA</unitOfMeasure>
+    <description>Sample item description for line 1</description>
+    <description2>C'est l'examen pour toutes les charactres Francais - âàçêëéèîïôùüÂÀÇÊËÉÈÎÏÔÙÛÜ</description2>
+    <merchantSKU>99990101</merchantSKU>
+    <vendorSKU>88880161</vendorSKU>
+    <unitCost>25.0000</unitCost>
+    <shippingCode>UPSN_CG</shippingCode>
+    <merchDept>33</merchDept>
+    <expectedShipDate>20251116</expectedShipDate>
+    <lineitemSupplemental>
+      <productFlags serializedProduct="false" />
+    </lineitemSupplemental>
+    <poLineData>
+      <vendorDescription>600250</vendorDescription>
+      <unitShippingWeight weightUnit="LB">123</unitShippingWeight>
+      <lineReqDelvDate>20251121</lineReqDelvDate>
+      <merchDept>33</merchDept>
+    </poLineData>
+  </lineItem>
+  <personPlace personPlaceID="PP3018353347">
+    <name1>John Doe</name1>
+    <address1>1 Place Ville Marie</address1>
+    <city>Montreal</city>
+    <state>QC</state>
+    <postalCode>H3B3W7</postalCode>
+    <email>johndoe@sample.com</email>
+    <dayPhone>555-555-5555</dayPhone>
+    <partnerPersonPlaceId>151,456,789</partnerPersonPlaceId>
+  </personPlace>
+  <personPlace personPlaceID="PP3018353348">
+    <name1>Mary Smith</name1>
+    <address1>1 Rideau</address1>
+    <city>Quebec</city>
+    <state>QC</state>
+    <country>CA</country>
+    <postalCode>G2E5H5</postalCode>
+    <email>marysmith@sample.com</email>
+    <dayPhone>555-555-5555</dayPhone>
+  </personPlace>
+</hubOrder>
+<messageCount>1</messageCount>
+</OrderMessageBatch>
